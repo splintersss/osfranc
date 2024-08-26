@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BuildCo Construction</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+    <nav class="navbar">
+        <div class="logo">
+            <h1>Build<span>Co</span></h1>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li class="dropdown">
+                <a href="#services">Services</a>
+                <div class="dropdown-content">
+                    <a href="#residential">Residential Construction</a>
+                    <a href="#commercial">Commercial Construction</a>
+                    <a href="#renovation">Renovation</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <a href="#projects">Projects</a>
+                <div class="dropdown-content">
+                    <a href="#project1">Project 1</a>
+                    <a href="#project2">Project 2</a>
+                    <a href="#project3">Project 3</a>
+                </div>
+            </li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <header class="hero" id="home">
+        <div class="hero-content">
+            <h2>Welcome to BuildCo</h2>
+            <p>Your trusted partner in construction and renovation</p>
+            <button class="quote-btn" onclick="requestQuote()">Get a Quote</button>
+        </div>
+    </header>
+
+    <section class="services" id="services">
+        <h2>Our Services</h2>
+        <div class="service-cards">
+            <div class="card">
+                <h3>Residential Construction</h3>
+                <p>High-quality homes built to your specifications.</p>
+                <button onclick="learnMore('Residential Construction')">Learn More</button>
+            </div>
+            <div class="card">
+                <h3>Commercial Construction</h3>
+                <p>Efficient and reliable commercial building solutions.</p>
+                <button onclick="learnMore('Commercial Construction')">Learn More</button>
+            </div>
+            <div class="card">
+                <h3>Renovation</h3>
+                <p>Transform your existing space with our expert renovation services.</p>
+                <button onclick="learnMore('Renovation')">Learn More</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="projects" id="projects">
+        <h2>Our Projects</h2>
+        <div class="project-gallery">
+            <div class="project-item">
+                <img src="project1.jpg" alt="Project 1">
+                <p>Modern Residential Building</p>
+            </div>
+            <div class="project-item">
+                <img src="project2.jpg" alt="Project 2">
+                <p>Commercial Office Space</p>
+            </div>
+            <div class="project-item">
+                <img src="project3.jpg" alt="Project 3">
+                <p>Luxury Renovation</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="about-us" id="about">
+        <h2>About Us</h2>
+        <p>BuildCo has been providing top-notch construction and renovation services for over a decade. Our team of professionals is dedicated to delivering high-quality results and exceeding client expectations.</p>
+        <button onclick="learnMore('About Us')">Learn More</button>
+    </section>
+
+    <section class="contact" id="contact">
+        <h2>Contact Us</h2>
+        <form>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+    
+
+</div>
+    <script src="script.js"></script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
